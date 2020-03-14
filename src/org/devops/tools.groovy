@@ -9,7 +9,5 @@ def PrintMes(value,color){
     ansiColor('xterm') {
         println(colors[color])
     }
-    def PrintMes(content){
-        println(content)
-    }
+   
 }
