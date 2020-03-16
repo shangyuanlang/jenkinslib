@@ -1,17 +1,6 @@
-#!groovy
-pipline{
-    agent {
-        node { label "master"}
-    }
-    
-    stages{
-        stage("build"){
-            steps{
-                script{
-                    mvnHome = tool "M2"
-                    sh "${mvnHome/bin/mvn -v}"
-                }
-             }
-        }
+node {
+    stage ("build"){
+        mavenHome = tool 'M2'
+        sh "${mavenHome}/bin/mvn -v"
     }
 }
