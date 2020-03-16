@@ -1,0 +1,6 @@
+node {
+    stage ("build"){
+        mavenHome = tool 'M2'
+        sh "${mavenHome}/bin/mvn -v"
+    }
+}
