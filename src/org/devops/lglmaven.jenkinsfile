@@ -1,3 +1,4 @@
+#!groovy
 pipline{
     agent {
         node { label "master"}
